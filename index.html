@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GenPass</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__block">
+          <h2 class="header__title">password.</h2>
+          <h5 class="header__subtitle">ver 0.1</h5>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container">
+        <div class="main__wrapper">
+          <div class="main__block-right">
+            <h1 class="main__title">
+              Генератор паролей
+            </h1>
+            <div class="main__block-form">
+              <label class="main__block-checkbox" for="checkbox">
+                <input class="main__block-checkbox_range input_length" type="number" min="5" max="30" step="1" value="5">
+                <input class="main__block-checkbox_rangespan input_rangefiled" type="range" min="5" max="30" step="1" value="5">
+              </label> <br>
+
+              <label class="main__block-checkbox" for="checkbox_number">
+                <input class="main__block-checkbox_inp input_number" type="checkbox" id="checkbox_number">
+                <span class="main__block-checkbox_span">Числа</span>
+              </label> <br>
+
+              <label class="main__block-checkbox" for="checkbox_symbol">
+                <input class="main__block-checkbox_inp input_symbol" type="checkbox" id="checkbox_symbol">
+                <span class="main__block-checkbox_span">Символы</span>
+              </label> <br>
+
+              <label class="main__block-checkbox" for="checkbox_speck-symbol">
+                <input class="main__block-checkbox_inp input_speck" type="checkbox" id="checkbox_speck-symbol">
+                <span class="main__block-checkbox_span">Убрать буквы L - l и I - i</span>
+              </label> <br>
+
+              <p class="main__block-input pass_field"></p>
+              <button class="main__block-btn pass_btn">Сгенерировать</button>
+            </p>
+          </div>
+        </div>
+        <div class="main__block-left">
+          <h2 class="main__title">
+            История
+          </h2>
+        </div>
+      </div>
+    </main>
+    <script type="module" src="/src/js/main.js"></script>
+  </body>
+</html>

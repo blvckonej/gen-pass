@@ -1,0 +1,25 @@
+@import "normalize.css";
+@import "variables.scss";
+@import "header.scss";
+@import "main.scss";
+@import "fonts.scss";
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+
+body {
+  font-family: var(--font-family-base);
+  color: var(--white-color);
+  background-color: var(--main-color);
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1200px;
+}

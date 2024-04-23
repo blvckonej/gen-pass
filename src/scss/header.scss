@@ -1,0 +1,35 @@
+.header {
+  margin: 0 auto;
+  margin-top: 15px;
+  &__block {
+    max-width: 100%;
+    height: 60px;
+    border-radius: var(--br-20);
+    background-color: var(--window-color);
+    display: flex;
+  }
+  &__title {
+    margin-left: 20px;
+    font-weight: var(--fw-semi-bold);
+    font-size: var(--fs-logo);
+    padding: 2px;
+    color: var(--white-color);
+    background: rgb(181, 232, 14);
+    background: linear-gradient(
+      90deg,
+      rgba(181, 232, 14, 1) 0%,
+      rgba(54, 171, 150, 1) 49%,
+      rgba(0, 212, 255, 1) 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    align-self: center;
+  }
+  &__subtitle {
+    margin-left: 10px;
+    font-size: 16px;
+    font-weight: var(--fw-light);
+    align-self: center;
+  }
+}
